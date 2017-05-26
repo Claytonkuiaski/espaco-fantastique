@@ -1,0 +1,95 @@
+header
+	min-height: 165px
+	background:
+		image: url('../images/fundo-menu.png')
+		repeat: no-repeat
+		position: top center
+		
+	.menu 
+		+flexbox
+		+justify-content(flex-start)
+		+breakpoint($celubot)
+			+justify-content(space-around)
+		.logo-menu 
+			img 
+				width: 204px
+				margin-top: 20px
+				margin-left: 100px
+				+breakpoint($tablet)
+					+img-responsive
+					width: 250px
+					margin-left: 0
+					margin-top: 10px
+		.menu-estatico 
+			white-space: nowrap
+			margin-top: 65px
+			margin-left: 90px
+			font-size: 18px
+			font-weight: $regular
+			+breakpoint($tablet)
+				display: none
+			ul 
+				li 
+					display: inline
+					border-radius: 20px
+					padding: 2px 0px
+					+transition(.2s)
+					&:hover
+						background-color: $azul
+						color: $branco
+					a 
+						padding: 2px 8px
+						color: $azul
+						+transition(.2s)
+						&:hover
+							color: $branco
+		.telefone-menu
+			white-space: nowrap
+			margin-top: 57px
+			margin-left: 50px
+			margin-right: 50px
+			font-size: 25px
+			+breakpoint($tablet)
+				margin-top: 63px
+			+breakpoint($celubot)
+				display: none	
+			i 
+				padding: 5px 13px
+				font-size: 17px
+				border-radius: 15px
+				background-color: $verde
+				color: $branco
+				+breakpoint($tablet)
+					font-size: 30px
+					border-radius: 30px
+					padding-bottom: 5px
+				span 
+					font-family: Open sans
+					font-size: 21px
+					+breakpoint($tablet)
+						font-size: 30px
+	.toggle
+		display: none	
+		margin-top: 40px	
+		i 
+			border: solid 1px
+			padding: 10px 15px
+			border-radius: 10px
+			font-size: 60px	
+			color: $preto
+			+transition(.2s)
+			&:hover 
+				background-color: $azul
+				color: $branco
+
+		+breakpoint($tablet)
+			display: block	
+		+breakpoint($celubot)
+			margin-left: 20px
+					
+				
+
+
+	
+
+		

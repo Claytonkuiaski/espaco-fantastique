@@ -1,0 +1,44 @@
+.cardapio
+	margin: 0
+	background:
+		image: url('../images/fundo-cardapio-azul.png')
+		repeat: repeat
+		position: top center
+	.cardapio-2
+		min-height: 300px
+		background:
+			image: url('../images/fundo-sobre.png')
+			repeat: no-repeat
+			position: top center	
+		.cardapio-espaco-fantastique
+			padding-bottom: 150px 
+			h1 
+				text-align: center 
+				color: $branco
+				font-size: 40px
+				margin-top: 80px
+		.slides 
+			+make-sm-column(6)
+			color: $azul-menu
+			margin-bottom: 60px
+			&:hover
+				+transition(.2s)
+				color: $verde-menu
+			.categoria-do-menu 
+				font-family: Arial Rounded MT
+				h2 
+					text-align: center 
+				.itens 
+					text-align: center 
+					margin-top: 20px
+					margin-left: 30px
+					margin-right: 30px
+					+flexbox
+					+justify-content(space-around)	
+					p 
+						margin-top: 18px		
+
+
+
+				
+

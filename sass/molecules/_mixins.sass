@@ -1,0 +1,50 @@
+$celular: max-width 440px
+$tablet: max-width 991px
+$celubot: max-width 768px
+$pc: max-width 1200px
+
+$branco: #fff
+$preto: black
+$cinza-slide: #f1f1f1
+$azul: #25254d
+$azul-claro: #2b2b56
+$azul-menu: #c5c5e4
+$verde: #2aa874
+$verde-claro: #49bc91
+$verde-deg1: #188b52
+$verde-deg2: #49be92
+$verde-menu: #93ca52
+$verde-menu-categoria-1: #2a8d62
+$verde-menu-categoria-2: #63be9d
+$verde-menu-blog-1: #2fa470
+$verde-menu-blog-2: #6bcca9
+$verde-border-blog: #40a07d
+
+
+/* ======== Font */
+$light: 300
+$regular: 400
+$bold: 700
+
+=transition($transition...) 
+  -moz-transition:    all $transition linear
+  -o-transition:      all $transition linear
+  -webkit-transition: all $transition linear
+  transition:         all $transition linear
+
+=gradient($angle,$gradient1, $gradient2)
+  background-color: $gradient2 
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
+
+=flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex

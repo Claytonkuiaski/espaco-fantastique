@@ -1,0 +1,27 @@
+{
+  "name": "espaco-fastastique",
+  "authors": [
+    "claytonKuiaski <claytonKuiaski@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.1",
+    "font-awesome": "^4.7.0",
+    "sass-flex-mixin": "^1.0.3"
+  },
+  "devDependencies": {
+    "wow": "wowjs#^1.1.2",
+    "slick-carousel": "^1.6.0"
+  }
+}

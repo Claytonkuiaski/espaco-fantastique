@@ -1,0 +1,36 @@
+.menu-responsivo
+	z-index: 99999
+	position: fixed
+	width: 100%
+	height: 0
+	left: 0
+	top: -315px
+	+transition(.2s)
+	&.ativo 
+		top: 0
+	
+	ul 
+		margin-top: 0px
+		margin-left: -50px
+		list-style: none
+		text-align: center
+		background-color: $azul
+		li 
+			a
+				font-size: 40px
+				padding: 10px
+				display: block
+				color: $branco
+				border-bottom: solid 1px $branco
+				+transition(.2s)
+				&:hover,
+				&:focus
+					text-decoration: none
+					background-color: $azul
+					border-bottom: solid 1px $branco
+					color: $verde
+
+.layout
+	+transition(.2s)
+	&.ativo 
+		padding-top: 315px

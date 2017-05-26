@@ -1,0 +1,77 @@
+.contato
+	min-height: 300px
+	margin-bottom: 50px
+	background:
+		image: url('../images/fundo-sobre.png')
+		repeat: no-repeat
+		position: top center	
+	.fale-conosco 
+		padding-bottom: 150px 
+		h1 
+			text-align: center 
+			color: $branco
+			font-size: 40px
+			margin-top: 80px	
+	.dados 
+		+flexbox
+		+justify-content(space-around)
+		margin-left: 40px
+		margin-right: 100px
+		+breakpoint($tablet)
+			display: block
+			margin: 0
+		img 
+			+img-responsive
+			width: 340px	
+			+breakpoint($tablet)
+				margin: 0 auto	
+		form 
+			margin-top: 78px
+			text-align: center
+			width: 515px
+			height: 533px
+			background-color: $azul
+			border-radius: 12px
+			+breakpoint($tablet)
+				margin: 0 auto
+				width: 90%
+			h2 
+				padding-top: 5px
+				margin-bottom: 25px
+				color: $verde-claro
+				font-size: 20px
+				+breakpoint($tablet)
+					padding-top: 25px
+			input
+				width: 90%
+				height: 45px
+				margin-bottom: 10px
+				border-radius: 5px
+				border: none
+				font-size: 17px
+				padding-left: 15px	
+			.botao
+				background-color: $verde
+				border-radius: 30px
+				color: $branco
+				font-size: 22px
+				width: auto
+				height: auto
+				margin-top: 30px
+				padding: 5px 23px
+				+breakpoint($celular)
+					width: 90%
+					font-size: 15px
+					
+			textarea
+				width: 90%
+				height: 175px
+				padding-top: 10px
+				border-radius: 5px
+				border: none	
+				font-size: 17px
+				padding-left: 15px
+				color: $azul
+			::-webkit-input-placeholder
+				color: $azul
+

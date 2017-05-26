@@ -1,0 +1,115 @@
+.blog 
+	min-height: 300px
+	background:
+		image: url('../images/fundo-sobre.png')
+		repeat: no-repeat
+		position: top center
+	.blog-espaco-fantastique 
+		padding-bottom: 150px 
+		h1 
+			text-align: center 
+			color: $branco
+			font-size: 40px
+			margin-top: 80px
+	.conteudo-blog	
+		+flexbox
+		+flex-wrap(wrap)
+		+justify-content(space-around)
+		margin-left: 20px
+		margin-right: 20px
+		margin-top: 50px  
+		.aside
+			+order(2)
+			.menu-blog
+				+order(2)
+				.categoria
+					border-bottom: none
+					border-radius: 12px 12px 0 0
+					+gradient(90deg, $verde-menu-categoria-1, $verde-menu-categoria-2)
+				.novidades
+					border-bottom: none
+				ul
+					width: 280px
+					height: 185px 
+					border-radius: 12px
+					+gradient(90deg, $verde-menu-blog-1, $verde-menu-blog-2)
+					li 
+						padding-top: 3px
+						padding-bottom: 3px
+						border-bottom: solid 3px $verde-border-blog
+						a
+							display: block
+							padding-left: 25px
+							color: $branco
+							font-size: 20px
+							font-weight: $light 
+			.facebook 
+				margin-top: 35px 	
+		.posts	
+			+order(1)			
+			.post-1,
+			.post-2
+				img
+					background-color: $azul
+					width: 590px
+					height: 290px
+					border-radius: 12px
+				h2 
+					margin-top: 35px
+					margin-bottom: 28px
+					font-size: 30px
+					color: $verde-claro
+				h3 
+					width: 590px
+					font-size: 15px
+					color: $azul 
+					line-height: 1.5
+					margin-bottom: 50px
+					text-align: justify
+
+				h4 
+					margin-bottom: 55px
+					a 
+						padding: 13px 32px
+						background-color: $verde
+						border-radius: 30px
+						color: $branco
+						font-size: 22px
+						+gradient(90deg, $verde-deg1, $verde-deg2)
+						&:hover 
+							+gradient(90deg, $verde-deg2, $verde-deg1)			
+	.slides
+		+make-sm-column(12)
+		margin-top: 20px 
+		.depoimentos
+			.aspas
+				height: 255px
+				margin-left: 50px
+				margin-right: 50px
+				margin-top: -50px
+				background-color: $cinza-slide
+				border-radius: 10px
+				img 
+					margin-left: -50px
+					padding-top: 50px
+				h3 
+					text-align: center
+					line-height: 1.5
+					margin-top: -60px
+					margin-left: 40px
+					margin-right: 40px
+					font-size: 15px
+				h2
+					margin-top: 20px
+					padding-bottom: 20px
+					text-align: center
+					font-size: 25px
+					font-weight: $light
+					color: $verde-claro
+				+breakpoint($tablet)
+					height: auto	
+			.usuario
+				img 
+					+img-responsive
+					margin: 0 auto 
+		

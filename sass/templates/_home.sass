@@ -1,0 +1,82 @@
+.slide-home
+	height: 520px
+	background:
+		image: url('../images/fundo-slide.png')
+		repeat: no-repeat
+		position: top center
+		size: cover
+	+breakpoint($tablet)
+		height: 480px	
+	+breakpoint($celubot)
+		height: auto
+	.slide 
+		color: $branco
+		+breakpoint($celubot)
+			text-align: center
+		.foto-palhaco
+			+make-sm-column(4)
+			img 
+				+img-responsive
+				margin: 0 auto
+				margin-bottom: 30px
+
+		.conteudo-slide
+			+make-sm-column(8)	
+			h2 
+				margin-top: 145px
+				font-size: 53px
+				font-family: Open sans
+				font-weight: $light	
+			h3
+				font-weight: $light	
+				font-size: 30px
+				font-weight: $light
+			h4	
+				margin-top: 90px
+				a
+					font-family: Open sans
+					font-weight: $light
+					font-size: 20px
+					border: 1px
+					border-radius: 30px	
+					padding: 7px 43px
+					color: $branco
+					+gradient(90deg, $verde-deg1, $verde-deg2)
+					&:hover 
+						+gradient(90deg, $verde-deg2, $verde-deg1)
+			+breakpoint($tablet)
+				margin-bottom: 50px			
+
+.conteudo-home 
+	+flexbox
+	+justify-content(space-around)		
+	text-align: center
+	margin: 70px 70px
+	+breakpoint($celubot)
+		display: block
+		
+
+	.brinquedos,
+	.estrutura,
+	.cardapio
+		h2 
+			color: $verde
+			font-size: 32px
+		h3 
+			margin-top: 30px
+			a
+				font-size: 20px
+				border: 1px 
+				border-radius: 30px
+				padding: 8px 30px
+				background-color: $verde	
+				color: $branco
+				+gradient(90deg, $verde-deg1, $verde-deg2)
+				&:hover 
+					+gradient(90deg, $verde-deg2, $verde-deg1)
+		+breakpoint($celubot)
+			margin-bottom: 150px			
+	.brinquedos,
+	.cardapio
+		h2 
+			color: $azul				

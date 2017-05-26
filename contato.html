@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="css/contato.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	<div class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="sobre.html">O Buffet</a></li>
+			<li><a href="cardapio.html">Cardápio</a></li>
+			<li><a href="contato..html">Fale Conosco</a></li>
+		</ul>		
+	</div>
+	<div class="layout">
+		<header>
+			<div class="container">
+				<div class="menu">
+					<div class="logo-menu">
+						<a href="#"><img src="images/logo-menu.png" alt="logo-menu"></a>
+					</div>
+					<div class="menu-estatico">
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">O Buffet</a></li>
+							<li><a href="cardapio.html">Cardápio</a></li>
+							<li><a href="contato.html">Fale Conosco</a></li>
+						</ul>
+					</div>
+					<div class="telefone-menu">
+						<i class="fa fa-phone" aria-hidden="true"><span> (11) 4436-4621</span></i>
+					</div>
+					<div class="toggle">
+						<a href="#"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="contato">
+				<div class="container">
+					<div class="fale-conosco">
+						<h1>Fale Conosco - Envie seu Orçamento</h1>
+					</div>
+					<div class="dados">	
+						<div class="foto-palhaco">
+							<img src="images/palhaco-contato.png" alt="Foto-palhaço">	
+						</div>
+						<form action="">
+							<h2>Para falar conosco preencha o formulário abaixo:</h2>
+							<input type="text" name="" placeholder="Nome" size="65"><br>
+							<input type="email" name="" placeholder="Email" size="65"><br>
+							<input type="text" name="" placeholder="Telefone" size="65"><br>
+							<textarea name="" placeholder="Mensagem" cols="65" rows="6"></textarea><br> 
+            				<input class="botao" type="submit" value="Solicite um Orçamento"><br>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2583205881133!2d-46.542789950112756!3d-23.66671837129958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42f67484c0b5%3A0x90319a4635431f6a!2sR.+Gon%C3%A7alo+Fernandes%2C+321+-+Jardim+Bela+Vista%2C+Santo+Andr%C3%A9+-+SP!5e0!3m2!1spt-BR!2sbr!4v1495548151880" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="rodape-1">
+				<div class="container">
+					<div class="endereco-rodape">
+						<h2><img src="images/point-map.png" alt=""> Rua Gonçalo Fernandes, 321 - Santo André</h2>	
+					</div>
+					<div class="contato-rodape">
+						<i class="fone fa fa-phone" aria-hidden="true"> <span>(11)<strong> 4436-4621</strong></span></i>
+						<a href="#"><i class="email fa fa-envelope" aria-hidden="true"> <span><strong>contato</strong>@espacofantastique.com.br</span></i></a>
+					</div>
+					<div class="botao-orcamento">
+						<a href="#">Fale Conosco Solicite um Orçamento</a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="rodape-2">
+					<h2>&copy 2017 Espaço Fantastique | Buffet Infantil Todos os Direitos Reservados.</h2>
+					<h3>Site Desenvolvido <a href="https://plug.ag/" target="blank"><img src="images/logo-plug.png" alt="logo-plug"></a>Agência Web</h3>
+				</div>
+			</div>
+		</footer>
+	</div> <!--layout-->
+
+	<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+	<script>
+      $(function(){       
+        $('.toggle').click(function(){
+          $('.layout').toggleClass('ativo');
+          $('.menu-responsivo').toggleClass('ativo');
+          $(this).toggleClass('ativo');
+        });
+        new WOW().init();
+      });
+      	$('.slides').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: true
+		});
+    </script>
+</body>
+</html>
