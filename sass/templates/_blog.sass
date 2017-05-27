@@ -1,5 +1,5 @@
 .blog 
-	min-height: 300px
+	margin-bottom: 50px
 	background:
 		image: url('../images/fundo-sobre.png')
 		repeat: no-repeat
@@ -20,7 +20,7 @@
 			display: block
 		.aside
 			+order(2)
-			margin-left: -35px
+			margin-left: -50px
 			.menu-blog	
 				.categoria
 					border-bottom: none
@@ -69,10 +69,10 @@
 			+order(1)			
 			.post-1,
 			.post-2
-				margin-right: -35px 
+				margin-right: -50px 
 				img
 					background-color: $azul
-					width: 590px
+					width: 550px
 					height: 290px
 					border-radius: 12px
 				h2 
@@ -81,7 +81,7 @@
 					font-size: 30px
 					color: $verde-claro
 				h3 
-					width: 590px
+					width: 550px
 					font-size: 15px
 					color: $azul 
 					line-height: 1.5
@@ -144,4 +144,7 @@
 				img 
 					+img-responsive
 					margin: 0 auto 
-		
+
+.menu-estatico
+	a 
+		color: $azul		

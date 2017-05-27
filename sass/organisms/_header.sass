@@ -23,7 +23,7 @@ header
 		.menu-estatico 
 			white-space: nowrap
 			margin-top: 65px
-			margin-left: 90px
+			margin-left: 70px
 			font-size: 18px
 			font-weight: $regular
 			+breakpoint($tablet)
@@ -31,17 +31,13 @@ header
 			ul 
 				li 
 					display: inline
-					border-radius: 20px
-					padding: 2px 0px
-					+transition(.2s)
-					&:hover
-						background-color: $azul
-						color: $branco
+					color: $azul
 					a 
-						padding: 2px 8px
-						color: $azul
+						padding: 1px 12px
+						border-radius: 20px
 						+transition(.2s)
 						&:hover
+							background-color: $azul
 							color: $branco
 		.telefone-menu
 			white-space: nowrap
@@ -70,18 +66,17 @@ header
 						font-size: 30px
 	.toggle
 		display: none	
-		margin-top: 40px	
+		margin-top: 40px
 		i 
 			border: solid 1px
 			padding: 10px 15px
 			border-radius: 10px
 			font-size: 60px	
 			color: $preto
-			+transition(.2s)
+			+transition(.5s)
 			&:hover 
-				background-color: $azul
-				color: $branco
-
+				transform: rotateY(180deg)
+				transform-style: preserve-3d		
 		+breakpoint($tablet)
 			display: block	
 		+breakpoint($celubot)
